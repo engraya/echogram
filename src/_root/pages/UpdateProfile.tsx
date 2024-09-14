@@ -179,13 +179,13 @@ const UpdateProfile = () => {
             <div className="flex gap-4 items-center justify-end">
               <Button
                 type="button"
-                className="shad-button_dark_4"
+                className="bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium"
                 onClick={() => navigate(-1)}>
                 Cancel
               </Button>
               <Button
                 type="submit"
-                className="shad-button_primary whitespace-nowrap"
+                className="bg-gradient-to-r from-teal-200 to-lime-800 hover:bg-gradient-to-l hover:from-teal-500 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-500 dark:focus:ring-teal-700 whitespace-nowrap"
                 disabled={isLoadingUpdate}>
                 {isLoadingUpdate && <Loader />}
                 Update Profile

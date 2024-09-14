@@ -25,7 +25,10 @@ const Saved = () => {
           alt="edit"
           className="invert-white"
         />
-        <h2 className="h3-bold md:h2-bold text-left w-full">Saved Posts</h2>
+               <h2
+            className="text-4xl font-extrabold w-full md:h2-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-600 via-sky-400 to-cyan-500">
+          Saved Posts
+          </h2>
       </div>
 
       {!currentUser ? (
@@ -33,7 +36,7 @@ const Saved = () => {
       ) : (
         <ul className="w-full flex justify-center max-w-5xl gap-9">
           {savePosts.length === 0 ? (
-            <p className="text-light-4">No available posts</p>
+            <p className="text-gray-50">No available posts</p>
           ) : (
             <GridPostList posts={savePosts} showStats={false} />
           )}

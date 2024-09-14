@@ -19,11 +19,15 @@ const Topbar = () => {
       <div className="flex-between py-4 px-5">
         <Link to="/" className="flex gap-3 items-center">
           <img
-            src="/assets/images/logo.svg"
+            src="/assets/images/applogo.svg"
             alt="logo"
-            width={130}
-            height={325}
+            width={50}
+            height={50}
           />
+                  <h1
+        className="justify-center flex bg-gradient-to-r items-center from-blue-500 via-teal-500 to-pink-500 bg-clip-text text-2xl font-extrabold text-transparent text-center select-auto">
+        Echogram
+        </h1>
         </Link>
 
         <div className="flex gap-4">

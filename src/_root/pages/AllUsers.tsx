@@ -16,7 +16,10 @@ const AllUsers = () => {
   return (
     <div className="common-container">
       <div className="user-container">
-        <h2 className="h3-bold md:h2-bold text-left w-full">All Users</h2>
+        <h2
+        className="text-4xl font-extrabold w-full md:h2-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-600 via-sky-400 to-cyan-500">
+  All Users
+            </h2>
         {isLoading && !creators ? (
           <Loader />
         ) : (
